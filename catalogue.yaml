@@ -36,7 +36,7 @@
         path: /tmp/catalogue.zip
         state: absent
 
-    - name: Download foo.conf
+    - name: Download catalogue zip
       ansible.builtin.get_url:
         url: https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
         dest: /tmp/catalogue.zip
