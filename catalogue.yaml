@@ -5,8 +5,8 @@
   - name: dnf module disable nodejs
     ansible.builtin.dnf:
       name: nodejs
-      state: disabled
+      state: absent
   - name: dnf module enable nodejs
     ansible.builtin.dnf:
       name: nodejs
-      state: enabled
+      state: present
