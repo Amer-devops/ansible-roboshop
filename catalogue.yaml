@@ -64,7 +64,7 @@
     - name: install mongodb client
       ansible.builtin.package:
         name: mongodb-mongosh
-        state: preseent
+        state: present
 
     - name: load master data
       ansible.builtin.shell: mongosh --host mongodb.daws86s.icu </app/db/master-data.js
