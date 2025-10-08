@@ -23,9 +23,4 @@
       name: mongod
       state: started
       enabled: yes
-
-  - name: ReStart system service
-    ansible.builtin.service:
-      name: mongod
-      state: Restarted
   
