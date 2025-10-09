@@ -1,5 +1,5 @@
-- name: configure nginx server
-  hosts: nginx
+- name: configure frontend server
+  hosts: frontend
   become: yes
   tasks:
   - name: disable default nginx
