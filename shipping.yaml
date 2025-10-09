@@ -1,4 +1,4 @@
-- name: setup shippin server
+- name: setup shipping server
   hosts: shipping
   become: yes
   tasks:
