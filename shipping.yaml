@@ -4,10 +4,10 @@
   tasks:
   - name: install maven
     ansible.builtin.package:
-    name: "{{ item }}"
-    state: present
-      - maven
-      - mysql
+      name: "{{ item }}"
+      state: present
+        - maven
+        - mysql
     
   - name: Add the user roboshop
     ansible.builtin.user:
