@@ -1,0 +1,14 @@
+- name: Install payment server
+  hosts: payment
+  become: yes  # Required for package installation
+  tasks:
+    - name: Install Python 3, GCC, and Python 3 package
+      ansible.builtin.dnf:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - python3
+        - gcc
+        - python3-devel
+        
+        
