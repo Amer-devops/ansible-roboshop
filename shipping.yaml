@@ -71,7 +71,7 @@
       name: all
       login_host: mysql.daws86s.icu
       login_user: root
-      login_password: RoboShop@
+      login_password: RoboShop@1
       target: "{{ item }}"
     loop:
     - /app/db/schema.sql
